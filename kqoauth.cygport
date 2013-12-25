@@ -1,0 +1,18 @@
+GIT_URI="https://github.com/kypeli/kQOAuth.git"
+GIT_TAG=${PV}
+inherit git qt4-qmake
+
+NAME="kqoauth"
+VERSION=0.98
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Qt OAuth library"
+DESCRIPTION="kQOAuth is a OAuth 1.0 library written for Qt in C++. The goals
+for the library have been to provide easy integration to existing Qt
+applications utilizing Qt signals describing the OAuth process, and to
+provide a convenient approach to OAuth authentication."
+HOMEPAGE="https://github.com/kypeli/kQOAuth/"
+
+PKG_NAMES="libkqoauth0 libkqoauth-devel"
+libkqoauth0_CONTENTS="usr/bin/cygkqoauth-0.dll usr/share/doc/"
+libkqoauth_devel_CONTENTS="usr/include/ usr/lib/ usr/share/qt4/mkspecs/features/"
